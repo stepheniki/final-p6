@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+  <title>Fisheye - photographe </title>
+  <script src="https://kit.fontawesome.com/db18982c9e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="assets/images/logo.png" alt="logo" class="logo"></a>
+  </header>
+  <main id="main">
+    <div class="photograph-header">
+    </div>
+
+    <!-- FORMULAIRE -->
+    <div id="contact_modal" role="dialog">
+      <div class="modal">
+        <header>
+          <h1>Contactez-moi</h1>
+          <img src="assets/icons/close.svg" tabindex="0" alt="Close" onclick="closeModal()">
+        </header>
+        <div id="title-photographer"></div>
+        <form>
+          <div>
+            <label>Prénom</label>
+            <input>
+            <label>Nom</label>
+            <input>
+            <label>Email</label>
+            <input>
+            <label>Votre message
+            </label>
+            <input class="input-large">
+          </div>
+          <button aria-label="Send" class="contact_button">Envoyer</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- FILTRES -->
+    <div role="listbox" id="filter-container">
+      <div class="sort-choice">
+        <p>Trier par &ensp;
+          <select aria-label="Select" id="filtres">
+            <option id="popularityFilter" value="popularity">Popularité</option>
+            <option disabled="disabled">────────</option>
+            <option id="dateFilter" value="date">Date</option>
+            <option disabled="disabled">────────</option>
+            <option id="titleFilter" value="title">Titre</option>
+          </select>
+        </p>
+      </div>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div role="dialog" tabindex="0" class="lightbox">
+      <div class="lightbox-container "></div>
+      <h2 class="lightbox-title"> </h2>
+      <button aria-label="Close" class="lightbox-close"></button>
+      <button aria-label="Previous-image" class="lightbox-prev"></button>
+      <button aria-label="Next-image" class="lightbox-next"></button>
+    </div>
+
+    <!-- GALERIE -->
+    <div class="container">
+      <div class="portfolio-section">
+      </div>
+    </div>
+
+    <!-- COMPTEUR DE LIKES -->
+    <div class="likes-counter">
+      <p class="align">
+        <span><span class="likes"></span><i title="like-icon" class="heart-icon fa-solid fa-heart">
+          </i></span>
+        <span><span class="price"></span> € / jour</span>
+      </p>
+    </div>
+  </main>
+
+  <!-- SCRIPTS -->
+  <script src="scripts/factories/lightbox.js"></script>
+  <script src="scripts/factories/medias.js"></script>
+  <script src="/scripts/factories/formulaire.js"></script>
+  <script src="/scripts/pages/photographer.js"></script>
+  <script src="/scripts/utils/contactForm.js"></script>
+
+</body>
+
+</html>

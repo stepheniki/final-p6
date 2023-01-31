@@ -29,17 +29,20 @@
         <form>
           <div>
             <label for="form_contact_firstname">Prénom</label>
-            <input name="first-name" id="first-name" placeholder="Entrez votre prénom" type="text" required>
+            <input aria-label="Enter your first name" name="first-name" id="first-name"
+              placeholder="Entrez votre prénom" type="text" required>
 
             <label for="form_contact_lastname">Nom</label>
-            <input name="last-name" id="last-name" placeholder="Entrez votre nom" type="text" required>
+            <input aria-label="Enter your last name" name="last-name" id="last-name" placeholder="Entrez votre nom"
+              type="text" required>
 
             <label for="form_contact_mail">Email</label>
-            <input name="email" id="email" placeholder="Entrez votre e-mail" type="email" required>
+            <input aria-label="Enter your email adress" name="email" id="email" placeholder="Entrez votre e-mail"
+              type="email" required>
 
             <label for="form_contact_message">Votre message</label>
-            <input name="message" id="message" placeholder="Entrez votre message" type="text" class="input-large"
-              required>
+            <input aria-label="Enter your message" name="message" id="message" placeholder="Entrez votre message"
+              type="text" class="input-large" required>
           </div>
           <button aria-label="Submit Form" type="submit" class="contact_button">Envoyer</button>
         </form>

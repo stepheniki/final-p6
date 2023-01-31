@@ -356,7 +356,7 @@ select:hover {
 .lightbox-next,
 .lightbox-prev {
   border: none;
-  background: url(assets/icons/chevron-droit.svg) center center / 16px 28px no-repeat;
+  background: url(https://stepheniki.github.io/final-p6/assets/icons/chevron-droit.svg) center center / 16px 28px no-repeat;
   width: 50px;
   height: 100%;
   position: fixed;
@@ -379,7 +379,7 @@ select:hover {
 .lightbox-close {
   width: 30px;
   height: 30px;
-  background: url(assets/icons/close.svg) center center no-repeat;
+  background: url(https://stepheniki.github.io/final-p6/assets/icons/close.svg) center center no-repeat;
   position: fixed;
   top: 20px;
   right: 30px;

@@ -31,7 +31,7 @@ function closeLightbox() {
 
 // Image suivante ---------------------------------------------------------------------
 function nextMedia() {
-    const allMedias = document.querySelectorAll(".image-media");   // recherche des images
+    const allMedias = document.querySelectorAll('.image-media');   // recherche des images
 
     mediaNumber += 1; // position du média est +1
     if (mediaNumber == allMedias.length) { // si on arrive au dernier média de la liste ...

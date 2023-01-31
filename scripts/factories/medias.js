@@ -156,6 +156,13 @@ function filter() {
         openLightbox(e)
       }
     })
+    // Faire focus sur la lightbox en pressant la touche "Tab"
+    image.addEventListener('keyup', e => {
+      if (e.key === 'Tab') {
+        document.querySelector('.lightbox-close').focus()
+      }
+    })
   })
+
 }
 // ---------------------------------------------------------------------------------------------------------------

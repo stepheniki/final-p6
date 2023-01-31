@@ -28,23 +28,31 @@ async function init() {
         openLightbox(e)
       }
     })
-  })
 
-  // Fermer la lightbox au clic sur la croix ------------------------------------------------
-  document.querySelector('.lightbox-close').addEventListener('click', e => {
-    closeLightbox(e)
-  })
+    // Faire focus sur la lightbox en pressant la touche "Tab"
+    image.addEventListener('keyup', e => {
+      if (e.key === 'Tab') {
+        document.querySelector('.lightbox-close').focus()
+      }
+    })
 
-  // Image suivante au clic sur la flèche droite ----------------------------------------
-  document.querySelector('.lightbox-next').addEventListener('click', mediaNumber => {
-    nextMedia(mediaNumber)
-  })
 
-  // Image précédente au clic sur la flèche gauche --------------------------------------
-  document.querySelector('.lightbox-prev').addEventListener('click', mediaNumber => {
-    prevMedia(mediaNumber)
-  })
 
+    // Fermer la lightbox au clic sur la croix ------------------------------------------------
+    document.querySelector('.lightbox-close').addEventListener('click', e => {
+      closeLightbox(e)
+    })
+
+    // Image suivante au clic sur la flèche droite ----------------------------------------
+    document.querySelector('.lightbox-next').addEventListener('click', mediaNumber => {
+      nextMedia(mediaNumber)
+    })
+
+    // Image précédente au clic sur la flèche gauche --------------------------------------
+    document.querySelector('.lightbox-prev').addEventListener('click', mediaNumber => {
+      prevMedia(mediaNumber)
+    })
+  })
   // Fonctions de la lightbox + formulaire au clavier ----------------------------------
   document.onkeydown = function (e) {
     if (e.key === 'ArrowRight') { // image suivante avec flêche droite
@@ -58,6 +66,10 @@ async function init() {
   }
 
   // Fermer module de contact -------------------------------------------------------------
+  // En cliquant sur la croix
+  document.querySelector('.close-modal').addEventListener('click', e => {
+    closeModal()
+  })
   // au clavier avec "Entrée" quand navigation avec "Tab" sur la croix
   document.getElementById('contact_modal').addEventListener('keyup', e => {
     if (e.key === 'Enter') {

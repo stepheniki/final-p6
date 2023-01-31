@@ -126,6 +126,7 @@ h1 {
   object-fit: cover;
   margin-top: 25px;
   margin-bottom: 0px;
+  cursor: pointer;
 }
 
 .portfolio-section video {
@@ -135,6 +136,7 @@ h1 {
   object-fit: cover;
   margin-top: 25px;
   margin-bottom: 0px;
+  cursor: pointer;
 }
 
 

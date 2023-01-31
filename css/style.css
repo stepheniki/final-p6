@@ -234,6 +234,16 @@ h1 {
 
 }
 
+.fa-heart:before {
+  content: "\f004";
+  cursor: pointer;
+}
+
+.fa-heart:hover {
+  content: "\f004";
+  cursor: pointer;
+  animation: lightboxIn .9s;
+}
 
 /* ---------------------FILTRES--------------------------------*/
 .filter-container {

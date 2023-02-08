@@ -355,28 +355,33 @@ select:hover {
   opacity: 0;
 }
 
-.lightbox-next,
+.lightbox-next {
+  border: none;
+  background: url(https://stepheniki.github.io/final-p6/assets/icons/chevron-droit.svg) center center / 16px 28px no-repeat;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  cursor: pointer;
+  transition: .3s;
+}
+
 .lightbox-prev {
   border: none;
   background: url(https://stepheniki.github.io/final-p6/assets/icons/chevron-droit.svg) center center / 16px 28px no-repeat;
   width: 50px;
-  height: 100%;
+  height: 50px;
   position: fixed;
-  top: 0;
-  right: 0;
-  margin-top: -14px;
-  z-index: 11;
+  top: 50%;
   cursor: pointer;
   transition: .3s;
-  text-indent: -3000px;
-}
-
-
-.lightbox-prev {
-  right: auto;
-  left: 0;
   transform: rotate(180deg);
+
 }
+
+
+
 
 .lightbox-close {
   width: 30px;

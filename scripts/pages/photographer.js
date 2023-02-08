@@ -22,6 +22,7 @@ async function init() {
     image.addEventListener('click', e => {
       openLightbox(e)
     })
+
     // En pressant la touche "Entrée"
     image.addEventListener('keyup', e => {
       if (e.key === 'Enter') {
@@ -35,8 +36,6 @@ async function init() {
         document.querySelector('.lightbox-close').focus()
       }
     })
-
-
 
     // Fermer la lightbox au clic sur la croix ------------------------------------------------
     document.querySelector('.lightbox-close').addEventListener('click', e => {
@@ -52,19 +51,19 @@ async function init() {
     document.querySelector('.lightbox-prev').addEventListener('click', mediaNumber => {
       prevMedia(mediaNumber)
     })
-  })
-  // Fonctions de la lightbox + formulaire au clavier ----------------------------------
-  document.onkeydown = function (e) {
-    if (e.key === 'ArrowRight') { // image suivante avec flêche droite
-      nextMedia(mediaNumber)
-    } else if (e.key === 'ArrowLeft') { // image précédente avec flêche gauche
-      prevMedia(mediaNumber)
-    } else if (e.key === 'Escape') { // fermer lightbox + formulaire avec touche Echap
-      closeLightbox()
-      closeModal()
-    }
-  }
 
+    // Fonctions de la lightbox + formulaire au clavier ----------------------------------
+    document.onkeydown = function (e) {
+      if (e.key === 'ArrowRight') { // image suivante avec flêche droite
+        nextMedia(mediaNumber)
+      } else if (e.key === 'ArrowLeft') { // image précédente avec flêche gauche
+        prevMedia(mediaNumber)
+      } else if (e.key === 'Escape') { // fermer lightbox + formulaire avec touche Echap
+        closeLightbox()
+        closeModal()
+      }
+    }
+  })
   // Fermer module de contact -------------------------------------------------------------
   // En cliquant sur la croix
   document.querySelector('.close-modal').addEventListener('click', e => {

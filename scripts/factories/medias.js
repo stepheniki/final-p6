@@ -27,7 +27,7 @@ function mediaFactory(mediaData) {
   } else {
     portfolioSection.innerHTML += `
     <div class="card">
-    <video  class="image-media" mediatitle="${title}" aria-label="${title}" controls ><source src="${mediaVideo}"></source> </video>
+    <video  class="image-media" tabindex="0" mediatitle="${title}" aria-label="${title}"><source src="${mediaVideo}"></source> </video>
      <p class="titrelike">
     <span class="align">${title}</span>
       <span class="align like">

@@ -14,16 +14,16 @@
     align-content: flex-end;
 }
 
-.photograph-header img{
+.photograph-header img {
     height: 180px;
     width: 180px;
     border-radius: 100px;
-  object-fit: cover;
-  text-align: center;
+    object-fit: cover;
+    text-align: center;
 
 }
 
-.photograph-header h2{
+.photograph-header h2 {
     color: #D3573C;
     font-size: 40px;
     margin-bottom: 4px;
@@ -43,12 +43,12 @@
     font-size: 16px;
     margin-top: 0px;
     font-weight: 600;
-    }
+}
 
-    .photograph-header button {
-        text-align: center;
-    
-    }
+.photograph-header button {
+    text-align: center;
+
+}
 
 .contact_button {
     font-size: 20px;
@@ -72,13 +72,13 @@
     justify-content: space-between;
     padding: 35px;
     margin: auto;
-    position:absolute;
+    position: absolute;
     top: 35px;
     left: 15px;
     right: 15px;
     mix-blend-mode: normal;
-filter: drop-shadow(-5px 10px 30px rgba(0, 0, 0, 0.25));
-    
+    filter: drop-shadow(-5px 10px 30px rgba(0, 0, 0, 0.25));
+
 }
 
 .modal header {
@@ -89,6 +89,7 @@ filter: drop-shadow(-5px 10px 30px rgba(0, 0, 0, 0.25));
 
 .modal header img {
     cursor: pointer;
+    z-index: 10;
 }
 
 .title-photographer div h1 {
@@ -97,10 +98,11 @@ filter: drop-shadow(-5px 10px 30px rgba(0, 0, 0, 0.25));
     text-align: left;
     color: #000000;
 }
+
 #title-photographer {
-height: 125px;
-margin-top: -32px;
-width: 700px;
+    height: 125px;
+    margin-top: -32px;
+    width: 700px;
 }
 
 form {
@@ -123,7 +125,7 @@ form div {
     width: 100%;
     align-items: self-start;
     padding-bottom: 25px;
-    
+
 }
 
 form input {
@@ -139,4 +141,3 @@ form input {
     border: none;
     border-radius: 5px;
 }
-

@@ -2,11 +2,11 @@
 
 function photographerFactory(data) {
   // les données importées (data) sont:
-  const { name, portrait, tagline, city, country, price, id } = data;
-  const picture = `assets/photographers/${portrait}`;
-  const tag = `${tagline}`;
-  const fiche = `${id}`;
-  const article = document.createElement('article');
+  const { name, portrait, tagline, city, country, price, id } = data
+  const picture = `assets/photographers/${portrait}`
+  const tag = `${tagline}`
+  const fiche = `${id}`
+  const article = document.createElement('article')
 
   article.innerHTML = `
 <a href="./photographer.html?id=${fiche}">
@@ -19,6 +19,6 @@ function photographerFactory(data) {
     `
 
   function getUserCardDOM() {
-    return (article);
+    return (article)
   } return { name, picture, tag, getUserCardDOM }
-};
+}

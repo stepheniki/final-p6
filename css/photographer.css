@@ -20,7 +20,6 @@
     border-radius: 100px;
     object-fit: cover;
     text-align: center;
-
 }
 
 .photograph-header h2 {
@@ -35,7 +34,6 @@
     margin-top: 0px;
     font-weight: 600;
     margin-bottom: 10px;
-
 }
 
 .photograph-header .photographer-description {
@@ -47,7 +45,6 @@
 
 .photograph-header button {
     text-align: center;
-
 }
 
 .contact_button {
@@ -78,7 +75,6 @@
     right: 15px;
     mix-blend-mode: normal;
     filter: drop-shadow(-5px 10px 30px rgba(0, 0, 0, 0.25));
-
 }
 
 .modal header {
@@ -125,7 +121,6 @@ form div {
     width: 100%;
     align-items: self-start;
     padding-bottom: 25px;
-
 }
 
 form input {

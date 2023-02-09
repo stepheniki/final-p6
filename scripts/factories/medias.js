@@ -1,7 +1,3 @@
-/* eslint-disable eqeqeq */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
-/* eslint-disable space-before-function-paren */
 
 // MÉDIAS affichés dans la gallerie --------------------------------------------------------
 let mediaFiltered
@@ -57,7 +53,7 @@ function displayLikes(medias, id) {
     likeCounter += media.likes
   })
   totalLikes.innerText = likeCounter // ajout du nombre total de likes
-};
+}
 
 // ajouter un like sur image-----------------------------------------------------------------------------
 function addLike(e) {
@@ -165,4 +161,3 @@ function filter() {
   })
 
 }
-// ---------------------------------------------------------------------------------------------------------------
